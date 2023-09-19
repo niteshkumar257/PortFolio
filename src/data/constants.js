@@ -176,7 +176,7 @@ export const education = [
     school: "Khallikote junior College ,Berhampur ,Ganjam",
     date: "2017 - 2019",
     grade: "75.3",
-    desc: "I complter my class 12 th from khallikoite junior college ,berhampur ,ganjam ,odisha",
+    desc: "I completed my class 12th from khallikote Junior College ,Berhampur ,Ganjam",
    
   },
   {
