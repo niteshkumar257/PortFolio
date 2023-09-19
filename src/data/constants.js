@@ -210,7 +210,7 @@ export const projects = [
     category: "web app",
     github: "https://github.com/niteshkumar257/Socia_front-end",
     webapp: "",
-    link:"Live Web Link"
+    link:"https://web-f7vi.onrender.com"
   },
   {
     id: 0,
