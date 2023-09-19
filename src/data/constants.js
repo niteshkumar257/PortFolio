@@ -266,10 +266,12 @@ export const projects = [
     title: "Chat Application",
     date: "Jan 2023 - Mar 2023",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+     "Developed a real-time chat application using React JS and Firebase that allows users to exchange messages instantly. Implemented user authentication, message storage, and retrieval features. Designed a responsive and intuitive UI for optimal user experience service"
+    
+      ,
     image:
      Gfg,
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    tags: ["HTML","CSS","React js", "JavaScript", "Firebase", ],
     category: "web app",
     github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
     webapp: "https://brain-tumor.netlify.app/",
