@@ -1,4 +1,4 @@
-import React from 'react'
+import React  ,{useState}from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -117,6 +117,7 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+ 
 `
 
 
@@ -126,10 +127,17 @@ const Contact = () => {
   //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
+  const [email,setEmail]=useState({});
+
+  const handleChange=(e)=>{
+  
+       setEmail({...email,[e.target.name]:e.target.value})
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+    if(!email.message || !email.subject || !email.from_name || !email.from_email) return ;
+    emailjs.sendForm('service_ymzak8o', 'template_tlzzglf', form.current, 'pYtAD3OJPlA0J1HkU')
       .then((result) => {
         setOpen(true);
         form.current.reset();
@@ -147,11 +155,25 @@ const Contact = () => {
         <Desc>Happy to lilsten from you about Any oppurtunity or Suggestion</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactInput placeholder="Your Email" name="from_email" required onChange={handleChange} />
+          <ContactInput placeholder="Your Name" name="from_name" required onChange={handleChange} />
+          <ContactInput placeholder="Subject" name="subject" required onChange={handleChange} />
+          <ContactInputMessage placeholder="Message" rows="4" name="message"  onChange={handleChange}/>
+          <button style={{
+             width:"100%",
+             height:40,
+             borderRadius:9,
+            
+             color:"black",
+             fontSize:15,
+             fontWeight:600,
+             cursor:"pointer",
+             ":hover":{
+                border:"2px solid red"
+              }
+            
+              
+          }} type="submit" value="Send" >Send email</button>
         </ContactForm>
         <Snackbar
           open={open}
