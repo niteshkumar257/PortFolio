@@ -246,8 +246,7 @@ export const projects = [
     date: "Oct 2022 - Present",
     description:
       "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-    image:
-     Leetcode,
+    image:"",
     tags: [
       "React Js",
       "MongoDb",
@@ -257,8 +256,8 @@ export const projects = [
       "NodeMailer",
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    github: "https://github.com/niteshkumar257/FullStack-ticket-Booking-app",
+    webapp: "",
     link:"Live Web Link"
   },
   {
@@ -270,14 +269,31 @@ export const projects = [
     
       ,
     image:
-     Gfg,
+     "",
     tags: ["HTML","CSS","React js", "JavaScript", "Firebase", ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
+    github: "https://github.com/niteshkumar257/ChatApplication",
+    webapp: "",
     link:"Live Web Link"
   
   },
+  // {
+  //   id: 10,
+  //   title: "React Weather Application",
+  //   date: "2022",
+  //   description:
+  //    "Developed a responsive web-based weather application using React.js and Axios, integrating real-time weather data from the OpenWeatherMap API. Demonstrated strong front-end development skills, API integration, and problem-solving abilities."
+    
+  //     ,
+  //   image:
+  //    "",
+  //   tags: ["HTML","CSS","React js", "JavaScript", "Axios","Weather api" ],
+  //   category: "web app",
+  //   github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
+  //   webapp: "https://brain-tumor.netlify.app/",
+  //   link:"Live Web Link"
+  
+  // },
   {
     id: 3,
     title: "Teacher Application",
