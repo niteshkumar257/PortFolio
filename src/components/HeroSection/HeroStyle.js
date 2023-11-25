@@ -80,6 +80,9 @@ export const HeroRightContainer = styled.div`
   order: 2;
   justify-content: end;
   gap: 12px;
+  :hover{
+    transition: transform 0.3s ease-in-out;
+  }
   @media (max-width: 960px) {
     order: 1;
     justify-content: center;
@@ -92,6 +95,18 @@ export const HeroRightContainer = styled.div`
   }
 `;
 
+export const ImageContainer=styled.div`
+
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+
+`
+
 export const Img = styled.img`
   position: relative;
   width: 100%;
@@ -99,7 +114,15 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+
+   
   border: 2px solid ${({ theme }) => theme.primary};
+
+  &:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    border-color: ${({ theme }) => theme.secondary}; /* Change border color on hover */
+  }
 
   @media (max-width: 768px) {
     max-width: 400px;
